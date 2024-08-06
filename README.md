@@ -1,6 +1,6 @@
 
 # RAG-based chatbot using LangChain, MongoDB Atlas, and Heroku
-This starter template implements a Retrieval-Augmented Generation (RAG) chatbot using LangChain, MongoDB Atlas, and Render. RAG combines AI language generation with knowledge retrieval for more informative responses. LangChain simplifies building the chatbot logic, while MongoDB Atlas' vector database capability provides a powerful platform for storing and searching the knowledge base that fuels the chatbot's responses. Render makes it easy to build, deploy, and scale the chatbot web service.
+This starter template implements a Retrieval-Augmented Generation (RAG) chatbot using LangChain, MongoDB Atlas, and Heroku. RAG combines AI language generation with knowledge retrieval for more informative responses. LangChain simplifies building the chatbot logic, while MongoDB Atlas' vector database capability provides a powerful platform for storing and searching the knowledge base that fuels the chatbot's responses. Heroku makes it easy to build, deploy, and scale the chatbot web service.
 
 ## Setup 
 Follow the steps below to set up a RAG chatbot powered by data from PDF files you provide.
@@ -21,7 +21,7 @@ Before you begin, make sure you have the following ready:
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/mongodb-developer/MongoDB-RAG-Heroku)
 
 
-### Step 1: Configure Render Web Service
+### Step 1: Configure Heroku Web Service
 
 - Fork [mongodb-developer/MongoDB-RAG-Heroku](https://github.com/mongodb-developer/MongoDB-RAG-Heroku/) on GitHub.
   
