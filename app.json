@@ -1,0 +1,23 @@
+{
+    "name": "MongoDB-RAG-Heroku",
+    "description": "A chatbot built with MongoDB Atlas Vector Search, React, Next.js, and OpenAI",
+    
+    "logo": "https://webimages.mongodb.com/_com_assets/cms/kusbhnrd813qmv46m-MongoDBLeaf1.png",
+    "repository": "https://github.com/mongodb-developer/MongoDB-RAG-Heroku",
+    "keywords": ["node", "express", "react", "mongodb", "heroku", "atlas", "vector-search"],
+    "env": {
+      "ATLAS_URI": {
+        "description": "MongoDB Atlas connection string",
+        "required": true
+      },
+        "OPENAI_API_KEY": {
+            "description": "OpenAI API key",
+            "required": true
+        }
+    },
+    "buildpacks": [
+      {
+        "url": "heroku/nodejs"
+      }
+    ]
+  }
