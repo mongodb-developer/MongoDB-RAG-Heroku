@@ -11,6 +11,8 @@ Follow the steps below to set up a RAG chatbot powered by data from PDF files yo
 Before you begin, make sure you have the following ready:
 
 - **MongoDB Atlas URI**: Set up your account if you don't already have one ([Create Account](https://www.mongodb.com/docs/guides/atlas/account/)). Then create an Atlas cluster.
+
+In your network tab make sure to have an access list to your destination heroku environment (`0.0.0.0/0` will open any IP address). If you use [Heroku private spaces](https://devcenter.heroku.com/articles/private-spaces) you can define a specific IP range.
     
 - **OpenAI API Key**: Set up an OpenAI account. [Then retrieve your API keys here](https://platform.openai.com/api-keys).
 
@@ -24,6 +26,14 @@ Before you begin, make sure you have the following ready:
 ### Step 1: Deploy Using Heroku 
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/mongodb-developer/MongoDB-RAG-Heroku)
+
+Specify the Atlas connection string from your cluster under:
+- `MONGODB_URI`
+
+And the OpenAI API Key:
+- `OPENAI_API_KEY`
+
+![Heroku Deploy](assets/heroku-deploy.png)
 
 ### Step 2: Upload PDF files to your chatbot
 - On your chatbot website, select the `Train` tab and upload a PDF document of your choice.
