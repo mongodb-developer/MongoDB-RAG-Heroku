@@ -16,19 +16,16 @@ Before you begin, make sure you have the following ready:
 
 - **Heroku account**: Set up a [Heroku](https://heroku.com/) account.
 
-- **A PDF of your choice**. This PDF represents your knowledge base. (Here's an [example PDF](https://drive.google.com/file/d/1yIHmqe5-D_32tlSN1LZq1LJY8TStziXx/view?usp=drive_link) if you need one.)
+- **A PDF of your choice**. This PDF represents your knowledge base. (Here's an [example PDF](https://webassets.mongodb.com/MongoDB_Architecture_Guide.pdf) if you need one.)
+
+
+
+
+### Step 1: Deploy Using Heroku 
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/mongodb-developer/MongoDB-RAG-Heroku)
 
-
-### Step 1: Configure Heroku Web Service
-
-- Fork [mongodb-developer/MongoDB-RAG-Heroku](https://github.com/mongodb-developer/MongoDB-RAG-Heroku/) on GitHub.
-  
-
-
-
-### Step 4: Upload PDF files to your chatbot
+### Step 2: Upload PDF files to your chatbot
 - On your chatbot website, select the `Train` tab and upload a PDF document of your choice.
 
 - If everything is deployed correctly, your document should start uploading to your cluster under the `chatter > training_data` collection.
@@ -38,7 +35,7 @@ Before you begin, make sure you have the following ready:
   ![image](https://github.com/utsavMongoDB/MongoDB-RAG-NextJS/assets/114057324/316af753-8f7b-492f-b51a-c23c109a3fac)
 
 
-### Step 5: Create Vector Index on Atlas
+### Step 3: Create Vector Index on Atlas
 For the RAG Question Answering (QnA) to work, you need to create a Vector Search Index on Atlas so your vector data can be fetched and served to LLMs.
 
 Let’s head over to our MongoDB Atlas user interface to create our Vector Search Index.
@@ -67,7 +64,7 @@ Let’s head over to our MongoDB Atlas user interface to create our Vector Searc
   ![image](https://github.com/utsavMongoDB/MongoDB-RAG-NextJS/assets/114057324/c1842069-4080-4251-8269-08d9398e09aa)
 
 
-### Step 6: Ask questions
+### Step 4: Ask questions
 Finally, head back to your chatbot website. Select the "QnA" tab to start asking questions based on your trained data.
 
   ![image](https://github.com/utsavMongoDB/MongoDB-RAG-NextJS/assets/114057324/c76c8c19-e18a-46b1-834a-9a6bda7fec99)
