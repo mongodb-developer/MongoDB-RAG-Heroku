@@ -6,7 +6,7 @@
     "repository": "https://github.com/mongodb-developer/MongoDB-RAG-Heroku",
     "keywords": ["node", "express", "react", "mongodb", "heroku", "atlas", "vector-search"],
     "env": {
-      "ATLAS_URI": {
+      "MONGODB_URI": {
         "description": "MongoDB Atlas connection string",
         "required": true
       },
